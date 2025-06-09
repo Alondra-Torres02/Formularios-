@@ -6,18 +6,179 @@
     <title>Formulario</title>
 </head>
 <body>
-    <h2>Datos Recibidos:</h2>
-  <p id="resultado"></p>
-
-  <script>
-    // Obtener los parámetros de la URL
-    const params = new URLSearchParams(window.location.search);
-    const nombre = params.get('nombre');
-    const correo = params.get('correo');
-
-    // Mostrar los datos en el documento
-    const resultado = document.getElementById('resultado');
-    resultado.innerHTML = `<strong>Nombre:</strong> ${nombre}<br><strong>Correo:</strong> ${correo}`;
-  </script>
+  <form action="formulario.html" method="get" >
+        <label for="nombre">
+            Nombre 
+        </label>
+        <br>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre completo" 
+        autocomplete="on"
+        required>
+    <br>
+        <label for="Apellido">
+            Apellido
+        </label>
+        <br>
+        <input type="text" name="Apellido" id="Apellido">
+    <br>
+        <label for="Direccion">
+            Direccion
+        </label>
+        <br>
+        <input type="text" name="Direccion" id="Direccion" disabled>
+    <br>
+       <label for="">
+        Correo
+        </label>
+    <br>
+        <input type="email" name="correo" id="correo" placeholder="correo@dominio.com">
+    <br>
+        <label for="">
+            Contraseña
+        </label>
+    <br>
+        <input type="password">
+    <br>
+        <label for="">
+            Busqueda
+        </label>
+    <br>
+        <input type="search" name="busqueda" id="busqueda">
+    <br>
+        <label for="">
+            URL
+        </label>
+    <br>
+        <input type="URL" name="url" id="url">
+    <br>
+    <br>
+        <label for="">
+            Campo de Texto 
+        </label>
+    <br>
+        <textarea></textarea>
+    <br>
+    <br>
+        <label for="">
+            Numero 
+        </label>
+    <br>
+        <input type="number" name="numero" id="numero">
+    <br>
+    <br>
+        <label for="">
+            Rango
+        </label>
+    <br>
+        <input type="range" name="rango" id="rango">
+    <br>
+     <br>
+        <label for="">
+            Fecha
+        </label>
+    <br>
+        <input type="date" name="fecha" id="fecha">
+         <br>
+        <label for="">
+            Hora
+        </label>
+    <br>
+        <input type="time" name="tiempo" id="tiempo">
+    <br>
+        <label for="">
+            Fecha y Hora
+        </label>
+    <br>
+        <input type="datetime-local" name="fecha" id="hora">
+    <br>
+        <label for="">
+            Mes
+        </label>
+    <br>
+        <input type="month" name="mes" id="mes">
+    <br>
+        <label for="">
+            Semana
+        </label>
+    <br>
+        <input type="week" name="semana" id="semana">  
+    <br>
+        <label for="">
+            Radio Button
+        </label>
+    <br>
+        <input type="radio" name="radio" id="radio"> 
+        <br>
+        <label for="">
+            Checkbox
+        </label>
+    <br>
+        <input type="checkbox" name="caja" id="caja"> 
+     <br>
+        <label for="">
+            Colores
+        </label>
+    <br>
+    <br>
+        <input type="color" name="color" id="color"> 
+         <br>
+        <label for="">
+            Selecciona Opcion
+        </label>
+    <br>
+    <br>
+        <select name="" id="">
+        <option value="1"> Opcion 1 </option>
+        <option value="2"> Opcion 2</option>
+         <option value="3"> Opcion 3 </option>
+        </select>
+    <br>
+    <br>
+        <select multiple>
+            <option value=""> Eelemnto 1</option>
+            <option value=""> Eelemnto 2</option>
+            <option value=""> Eelemnto 3</option>
+        </select>
+    <br>
+    <br>
+    <br>
+        <label for="">Lista</label>
+        <input type="text" list="items">
+        <datalist id="items">
+            <option value=""> Opcion 1</option>
+            <option value=""> Opcion 2</option>
+            <option value=""> Opcion 3</option>
+        </datalist>
+        <br><br>
+        <label for="">Limpieza de datos</label>
+    <input type="reset" value="limpiar">
+    <br>
+    <br>
+    <br>
+        <input type="submit" value="enviar datos">
+        <br><br>
+    
+    </form>
+    <br>
+    <br>
+    <form action="formulario.html" method="get">
+        <button> Boton 2</button>
+        <br>
+        <br>
+     <label for=""> Selcecciona un archivo</label>
+    <br>
+<br>
+      <input type="file" name="foto" id="foto">
+    </form>
+    <br>
+    <br>
+    <progress max="100" value="50"></progress>
+    <br><br><br>
+    <label for="">Envio de datos</label>
+    <input type="submit" value="Nombre del boton">
+    <br>
+    <label for="">Boton sin uso</label>
+    <input type="button" value="Boton 1">
+    <button> Boton 2</button>
 </body>
 </html>
