@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Datos Recibidos:</h2>
+  <p id="resultado"></p>
+
+  <script>
+    // Obtener los parámetros de la URL
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get('nombre');
+    const correo = params.get('correo');
+
+    // Mostrar los datos en el documento
+    const resultado = document.getElementById('resultado');
+    resultado.innerHTML = `<strong>Nombre:</strong> ${nombre}<br><strong>Correo:</strong> ${correo}`;
+  </script>
+</body>
+</html>

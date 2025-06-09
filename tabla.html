@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href= "fontawesome-free-6.7.2-web/css/all.css">   
+ <title>Tabla</title>
+
+    <style>
+      table{
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+         
+        border-collapse: collapse;
+      }
+
+      table th,table td{
+      border: 3px solid rgb(28, 177, 127);
+      padding: 5px 10px;
+      /*
+      padding-top: 5px;
+      padding-right: 10px;
+      */
+      
+       }
+      table th,
+      table td:first-child{
+        background-color: #17a2b8;
+        color: white;
+        width: 100px;
+        font-weight: 400;
+      }
+      table td span{
+        margin-right: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      table td span:nth-child(1){
+        color: #17a2b8; 
+      }
+       table td span:nth-child(2){
+        color: #17a552; 
+      }
+       table td span:nth-child(3){
+        color: #bd0303; 
+      }
+
+       table tr:nth-child(odd){
+        background-color: grey;
+       }
+
+       table tr:hover{
+        background-color: rgb(0, 0, 0, 0.15);
+       }
+
+
+      
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+        <th>ID</th>
+      <th>NOMBRE</th>
+      <th>APELLIDO</th>
+      <th>CORREO</th>
+      <th>OPCIONES </th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr>
+                <td>123456</td>
+                 <td>ALONDRA</td>
+                  <td>TORRES</td>
+                   <td>AL45248@UN.EDU.COM</td>
+                    <td>
+                        <span class="fas fa-info-circle"> </span>
+                        <span class="fas fa-edit"></span>
+                        <span class="fas fa-trash-alt"></span>
+                    </td>
+                    </tr>  
+                    <tr>
+                <td>123456</td>
+                 <td>ALONDRA</td>
+                  <td>TORRES</td>
+                   <td>AL45248@UN.EDU.COM</td>
+                    <td> 
+                        <span class="fas fa-info-circle"> </span>
+                        <span class="fas fa-edit"></span>
+                        <span class="fas fa-trash-alt"></span>
+                    </td>
+                     </tr> 
+                  <tr>
+                <td>123456</td>
+                 <td>ALONDRA</td>
+                  <td>TORRES</td>
+                   <td>AL45248@UN.EDU.COM</td>
+                    <td> 
+                        <span class="fas fa-info-circle"> </span>
+                        <span class="fas fa-edit"></span>
+                        <span class="fas fa-trash-alt"></span>
+                    </td>
+                     </tr> 
+
+                  <tr>
+                <td>123456</td>
+                 <td>ALONDRA</td>
+                  <td>TORRES</td>
+                   <td>AL45248@UN.EDU.COM</td>
+                    <td>
+                         <span class="fas fa-info-circle"> </span>
+                        <span class="fas fa-edit"></span>
+                        <span class="fas fa-trash-alt"></span>
+                     </td>
+                     </tr> 
+                  <tr>
+                <td>123456</td>
+                 <td>ALONDRA</td>
+                  <td>TORRES</td>
+                   <td>AL45248@UN.EDU.COM</td>
+                    <td>
+                        <span class="fas fa-info-circle"> </span>
+                        <span class="fas fa-edit"></span>
+                        <span class="fas fa-trash-alt"></span>
+                    </td>
+                                  
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
