@@ -6,17 +6,17 @@
     <title>Colores</title>
     <style> 
 
-        .article{ 
-            width: 200px;
-            height: 200px;
-            background-color: red;
-        }
+        .article{
+			border: 1px solid red;
+			margin-bottom: 100px;
+		}
+        
         .hezadecimalcolor{ 
             width: 200px;
             height: 200px;
             background-color: rgb(21, 42, 156);
         }
-        .color{
+        .clavecolor{
          width: 200px;
             height: 200px;
             background-color: rgb(25, 150, 80)   
@@ -24,21 +24,29 @@
         .HSL{
              width: 200px;
             height: 200px;
-            background-color: rgb(navy, rosybrown,orange)
+            background-color: rgb(129, 112, 207);
         }
         .Transparencia {
             width: 250px;
             height: 250px;
             background-color: transparent;
             background-color: chocolate;
-            background-color: rgb(rgb(195, 144, 252), rgb(129, 112, 207), rgb(71, 43, 136));
+            background-color: (rgb(195, 144, 252), rgb(129, 112, 207), rgb(71, 43, 136));
         }
        .degradado
         {
      width: 250px;
             height: 250px;
             background: linear-gradient(90deg, blue, pink,red)
+
          }
+
+          .transparencia
+        {
+     width: 250px;
+            height: 250px;
+            background: linear-gradient(90deg, rgba(156, 156, 196, 0.507), rgba(172, 141, 146, 0.288),rgba(79, 133, 74, 0.507))
+             }
         .margen{ 
             /*margin*/
             margin-top: 100px;
@@ -72,33 +80,75 @@
             padding: 80px 60px 20px 35px;
 
         }
+          /*DESPLIEGUE EN BLOQUE*/
+          .bloque div{
+               display: block;						
+
+          }
+
+
+          /*DESPLIEGUE EN LINEA*/
+          .enlinea div{
+               display: inline; 
+               display: inline-block;
+
+          }
+
+
+          /*DESPLIEGUE EN TABLA*/
+		.entable div{
+               display: table-cell;
+
+          }
 
 
     </style>
     
 </head>
 <body>
-   <div class="clavecolor">
-    Aplicar color 
-   </div>
-   <div class="hezadecimalcolor">
-    Aplicar color 
-   </div>
-   <div class="HSL">
-   </div>
-    <div class="transparencia">
-    </div>
-     <div class="degradado">
-     </div>
-     <div class="margen"
-     ></div>
-     <div class="border"> 
-     </div>
-     <div class="padding">
-     </div>
-     <div></div>
-     <div></div>
-     <div></div>
-     <div></div>
+  <h1>ELEMENTOS DE BLOQUE</h1>
+    <article class="article bloque ">
+        <div class="HSL">UNO</div>
+        <div class="HSL">DOS</div>
+        <div class="HSL">TRES</div>
+        <div class="HSL">CUATRO</div>
+    </article>
+
+     <h1>ELEMENTOS EN LINEA</h1>
+     <article class="article enlinea">
+          <div class="clavecolor">UNO </div>
+          <div class="clavecolor">DOS</div>
+          <div class="clavecolor">TRES </div>	
+          <div class="clavecolor">CUATRO </div>
+     </article>
+
+     <h1>ELEMENTOS EN TABLA</h1>
+     <article class="article entable">
+            <div class="hezadecimalcolor">UNO </div>
+            <div class="hezadecimalcolor">DOS </div>
+            <div class="hezadecimalcolor">TRES</div>
+            <div class="hezadecimalcolor">CUATRO </div>
+     </article>
+
+     <h1>POSICIONAMIENTO</h1>
+     <article class="article posicionamiento">
+          <div class="transparencia">RELATIVO</div>
+          <div class="transparencia">ABOLUTO</div>
+          <div class="transparencia">FIJO</div>	
+     </article>
+
+     <h1>POSICIONAMIENTO FLOTANTE</h1>
+     <article class="article flotante">
+        <div class="degradado">PRIMERO</div>
+        <div class="degradado">SEGUNDO</div>
+        <div class="degradado">TERCERO</div>
+        <div class="degradado">CUARTO</div>
+        <div class="degradado">QUINTO</div>
+        <div class="degradado">SEXTO</div>
+             
+     </article>
+
+
+   
 </body>
 </html>
